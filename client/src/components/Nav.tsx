@@ -2,7 +2,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import React from 'react';
 
-export const Nav = () => {
+const Nav = () => {
   return (
     <>
       <div>
