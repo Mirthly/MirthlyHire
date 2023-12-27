@@ -1,11 +1,8 @@
-import Nav from './components/Nav';
-import Specs from './components/Specs';
-
+import Job from './pages/job';
 const App = () => {
   return (
     <>
-      <Nav />
-      <Specs />
+      <Job />
     </>
   );
 };
