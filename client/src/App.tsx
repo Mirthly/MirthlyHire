@@ -1,9 +1,13 @@
-import Job from './pages/job';
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Job from "./pages/Job";
+
 const App = () => {
   return (
-    <>
-      <Job />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />}></Route>
+      <Route path="/dashboard" element={<Job />}></Route>
+    </Routes>
   );
 };
 
