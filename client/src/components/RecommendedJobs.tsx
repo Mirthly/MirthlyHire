@@ -1,41 +1,26 @@
 const RecommendedJobs = () => {
   return (
     <>
-      <div className='flex flex-col'>
+      <div className='flex flex-col px-12'>
         <div className='flex justify-between'>
           <div>
-            <div className='flex gap-10'>
-              <div>Recommended Jobs</div>
-              <div>386</div>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>Sort By</div>
-            <div>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-6 h-6'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75'
-                />
-              </svg>
+            <div className='flex gap-10 p-4'>
+              <div className="text-xl">Recommended Jobs</div>
+              <div className="bg-black rounded-full text-white px-2 pb-[2px] flex justify-center items-center">153</div>
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-4'>
-          <div>hi</div>
-          <div>hi</div>
-          <div>hi</div>
-          <div>hi</div>
-          <div>hi</div>
-          <div>hi</div>
+        <div className='grid grid-cols-4 gap-4'>
+          {data.map((job)=>{
+            return(
+              <div className="flex flex-col gap-2 border-2 p-4 rounded-xl border-black" key={job.Description}>
+              <div>{job.CompanyName}</div>
+              <div>{job.RoleName}</div>
+              <div>{job.Experience}</div>
+              <div>{job.salary}</div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </>
@@ -43,3 +28,55 @@ const RecommendedJobs = () => {
 };
 
 export default RecommendedJobs;
+
+
+const data = [{
+  CompanyName:"Google",
+  RoleName:"Senior Full Stack Engineer",
+  Experience:"5+",
+  Area:"Seatle",
+  salary:"200000-250000",
+  Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
+},{
+  CompanyName:"Google",
+  RoleName:"Senior Full Stack Engineer",
+  Experience:"5+",
+  Area:"Seatle",
+  salary:"200000-250000",
+  Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
+},{
+  CompanyName:"Google",
+  RoleName:"Senior Full Stack Engineer",
+  Experience:"5+",
+  Area:"Seatle",
+  salary:"200000-250000",
+  Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
+},{
+  CompanyName:"Google",
+  RoleName:"Senior Full Stack Engineer",
+  Experience:"5+",
+  Area:"Seatle",
+  salary:"200000-250000",
+  Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
+},{
+  CompanyName:"Google",
+  RoleName:"Senior Full Stack Engineer",
+  Experience:"5+",
+  Area:"Seatle",
+  salary:"200000-250000",
+  Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
+},{
+  CompanyName:"Google",
+  RoleName:"Senior Full Stack Engineer",
+  Experience:"5+",
+  Area:"Seatle",
+  salary:"200000-250000",
+  Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
+},{
+  CompanyName:"Google",
+  RoleName:"Senior Full Stack Engineer",
+  Experience:"5+",
+  Area:"Seatle",
+  salary:"200000-250000",
+  Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
+}]
