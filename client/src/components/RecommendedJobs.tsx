@@ -14,10 +14,10 @@ const RecommendedJobs = () => {
           {data.map((job)=>{
             return(
               <div className="flex flex-col gap-2 border-2 p-4 rounded-xl border-black" key={job.Description}>
+              <div className="text-xl font-bold">{job.RoleName}</div>
               <div>{job.CompanyName}</div>
-              <div>{job.RoleName}</div>
-              <div>{job.Experience}</div>
-              <div>{job.salary}</div>
+              <div>Experience : {job.Experience} years</div>
+              <div>Salary : {job.salary}</div>
               </div>
             )
           })}
@@ -35,42 +35,42 @@ const data = [{
   RoleName:"Senior Full Stack Engineer",
   Experience:"5+",
   Area:"Seatle",
-  salary:"200000-250000",
+  salary:"$200000-$250000",
   Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
 },{
   CompanyName:"Google",
   RoleName:"Senior Full Stack Engineer",
   Experience:"5+",
   Area:"Seatle",
-  salary:"200000-250000",
+  salary:"$200000-$250000",
   Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
 },{
   CompanyName:"Google",
   RoleName:"Senior Full Stack Engineer",
   Experience:"5+",
   Area:"Seatle",
-  salary:"200000-250000",
+  salary:"$200000-$250000",
   Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
 },{
   CompanyName:"Google",
   RoleName:"Senior Full Stack Engineer",
   Experience:"5+",
   Area:"Seatle",
-  salary:"200000-250000",
+  salary:"$200000-$250000",
   Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
 },{
   CompanyName:"Google",
   RoleName:"Senior Full Stack Engineer",
   Experience:"5+",
   Area:"Seatle",
-  salary:"200000-250000",
+  salary:"$200000-$250000",
   Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
 },{
   CompanyName:"Google",
   RoleName:"Senior Full Stack Engineer",
   Experience:"5+",
   Area:"Seatle",
-  salary:"200000-250000",
+  salary:"$200000-$250000",
   Description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, felis vitae mollis luctus, mauris ante laoreet magna, vel molestie augue metus vel est. Proin ac lobortis nisi, non blandit ex. Curabitur lacinia mauris non mi consequat maximus. Integer suscipit sem id blandit blandit. Donec varius in augue venenatis suscipit. Praesent in congue est, non euismod eros. Maecenas tincidunt vel nisi a bibendum. Maecenas ipsum purus, lobortis a scelerisque nec, dapibus id dolor. "
 },{
   CompanyName:"Google",
