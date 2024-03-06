@@ -14,7 +14,7 @@ const HomePage = () => {
               Find jobs, create trackable resumes and enrich your application
             </div>
             <div className="flex gap-10">
-              <Link to="/dashboard">
+              <Link to="/explore">
                 <button className="shadow-lg px-4 py-2 text-2xl rounded-xl flex gap-2 items-center">
                   <div>Find</div>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

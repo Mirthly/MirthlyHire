@@ -1,5 +1,6 @@
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -7,15 +8,12 @@ const Nav = () => {
       <div>
         <div className='flex justify-between gap-5 border-b-2 fixed w-[100%]'>
           <div className='flex gap-5 m-5 px-10'>
-        
-              <div>Mirthly</div>
-            
+            <Link to="/">Mirthly</Link>
             <div className='flex gap-5'>
-              <div>Find Job</div>
-              <div>Messages</div>
-              <div>Hiring</div>
-              <div>Community</div>
-              <div>FAQ</div>
+              <Link to="/explore">Find Job</Link>
+              <Link to="/messages">Messages</Link>
+              <Link to="/community">Community</Link>
+              <Link to="/about">FAQ</Link>
             </div>
           </div>
           <div className='flex gap-5 m-5'>
