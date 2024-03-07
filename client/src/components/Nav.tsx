@@ -1,8 +1,11 @@
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 
 const Nav = () => {
+  const [toggle, setToggle] = useState(true)
+
   return (
     <>
       <div>
@@ -17,7 +20,12 @@ const Nav = () => {
             </div>
           </div>
           <div className='flex gap-5 m-5'>
-            <AccountCircleIcon />
+            <AccountCircleIcon className='cursor-pointer' onClick={()=>setToggle(!toggle)}/>
+            {toggle && (<div className='absolute mt-20 border-2 border-black w-screen h-screen'>
+              <div>
+                Hello World
+                </div>
+            </div>)}
             <NotificationsNoneIcon />
           </div>
         </div>

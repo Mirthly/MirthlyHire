@@ -1,4 +1,3 @@
-import Nav from '../components/Nav';
 import Specs from '../components/Specs';
 import RecommendedJobs from '../components/RecommendedJobs';
 
