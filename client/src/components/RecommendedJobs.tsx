@@ -1,3 +1,5 @@
+import Job_pop_up from "./Job_pop_up";
+
 const RecommendedJobs = () => {
   return (
     <>
@@ -11,13 +13,18 @@ const RecommendedJobs = () => {
           </div>
         </div>
         <div className='grid grid-cols-4 gap-4'>
-          {data.map((job)=>{
+          {data.map((job,index)=>{
             return(
-              <div className="flex flex-col gap-2 border-2 p-4 rounded-xl border-black" key={job.Description}>
-              <div className="text-xl font-bold">{job.RoleName}</div>
-              <div>{job.CompanyName}</div>
-              <div>Experience : {job.Experience} years</div>
-              <div>Salary : {job.salary}</div>
+              <div className="flex flex-col gap-2 border-2 p-4 rounded-xl border-black cursor-pointer" key={index} onClick={()=>{
+                return(
+                  <div>
+                    <Job_pop_up/>
+                  </div>                )
+              }}>
+                <div className="text-xl font-bold">{job.RoleName}</div>
+                <div>{job.CompanyName}</div>
+                <div>Experience : {job.Experience} years</div>
+                <div>Salary : {job.salary}</div>
               </div>
             )
           })}

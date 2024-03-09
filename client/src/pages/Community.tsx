@@ -1,7 +1,10 @@
+import Nav from "../components/Nav"
+
 const Community = () =>{
     return(
         <div>
-            <div>Community</div>
+            <Nav />
+            <div className="pt-16">Community</div>
         </div>
     )
 }

@@ -1,7 +1,10 @@
+import Nav from "../components/Nav"
+
 const Messages = () =>{
     return(
         <div>
-            <div>
+            <Nav />
+            <div className="pt-16">
                 Messages
             </div>
         </div>
